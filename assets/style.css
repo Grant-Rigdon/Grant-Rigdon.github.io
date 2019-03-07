@@ -14,7 +14,7 @@ body {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 30px;
     margin-left: 8%;
-    color: #000000;   
+    color: #777;   
     padding: 5px; 
 }
 
@@ -41,9 +41,9 @@ img {
 }
 
 h1 {
-    color: #ffc107;
+    color: #777;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    border-bottom: 1px solid #777;
+    border-bottom: 5px solid #ffc107;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -75,9 +75,27 @@ h1 {
 
 #gr {
     display: block;
-    height: 55rem;
-    width: auto;
+    height: auto;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#icons {
+    margin: auto;
+}
+
+.icons {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #777;
+    
+}
+
+#or {
+    margin: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    
 }
 
