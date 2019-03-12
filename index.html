@@ -15,27 +15,15 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <a class="navbar-brand" href="#logo">Grant Rigdon</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item line">
-          <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item line">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div id="logo" class="col-12">
+    
+  </nav> -->
+  <div id="logo" class="col-12 slit-in-horizontal">
     <img id="gr" src="assets/GRANT LOGO.png">
   </div>
   <div id="about">
@@ -212,9 +200,19 @@
       </div>
     </div>
   </div>
+  <div id="nav">
+    <div class="menu-list">
+      <a class="chip" href="#about"><i class="fas fa-user-circle fa-2x"></i>About Me</a>
+      <br>
+      <a class="chip" href="#portfolio"><i class="fas fa-folder-open fa-2x"></i>Portfolio</a>
+      <br>
+      <a class="chip" href="#contact"><i class="fas fa-envelope-open-text fa-2x"></i>Contact</a>
+    </div>
+    <i  class="fas fa-chevron-circle-up fa-4x menu"></i>
+  </div>
   <footer class="footer">
     <div class="container">
-      <span class="text-muted">Copyright&copy;</span>
+      <a href="#logo"><span class="text-muted">Grant Rigdon</span></a>
     </div>
   </footer>
 
@@ -227,9 +225,20 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 <script>
-    $(".btn-warning").on("click",() => {
-      $(".form-control").val()=""
-    })
+  
+  $(".btn-warning").on("click",() => {
+    $(".form-control").val()=""
+  })
+
+  $('.menu').on("click",() =>  {
+    $('.menu').toggleClass('menu-rotate')
+    $('.menu-list').toggle('.menu-list-open slide-in-bottom')
+  })
+
+  $(".chip").on("click", () => {
+    $('.menu').toggleClass('menu-rotate')
+    $('.menu-list').toggle('.menu-list-open')
+  })
 </script>
   
 </body>
