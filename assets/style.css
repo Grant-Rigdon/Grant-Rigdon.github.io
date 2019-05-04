@@ -85,6 +85,10 @@ h1 {
     
 }
 
+.icons:hover {
+    color: #ffc107;
+}
+
 #or {
     margin: auto;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -182,6 +186,10 @@ cursor:pointer;
     border-radius: 25px;
     background-color: #f1f1f1;
     margin-top: 10px;
+}
+
+.chip:hover {
+    color: #ffc107;
 }
 
 .chip i {    
